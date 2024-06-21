@@ -1,150 +1,103 @@
 @import "variables";
 
-.dashboard-background {
-  background-color: $clr-dashboard;
-  .container-fluid {
-    padding: 0rem;
-    height: 100%;
-    .header {
-      background-color: white;
-      height: 4rem;
-      display: flex;
-      padding: 1rem;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-      color: $clr-dark-blue;
-      font-weight: 500;
-      margin-bottom: 0.8rem;
-      .img-fluid {
-        height: 3rem;
-      }
-      ul {
-        list-style: none;
-        position: absolute;
-        right: 0.5rem;
-        background: white;
-        top: 3rem;
-        text-transform: capitalize;
-        color: $clr-dark-orange;
-        margin-bottom: 0rem;
-        padding: 0.5rem 2rem;
-        font-size: 0.875rem;
-        font-weight: 400;
-        display: flex;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid $clr-gray200;
-        .logout-icon {
-          font-size: 1rem;
-          margin-right: 0.3rem;
-        }
-      }
-      .login {
-        cursor: pointer;
-        .drop-icon {
-          color: $clr-dark-orange;
-          position: relative;
-        }
-        .icon-drop {
-          transform: rotate(180deg);
-        }
-      }
-    }
-    .main-module {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      min-height: 100vh;
-      .module-menu {
-        width: 20%;
-        background-color: white;
-        overflow: auto;
-        .menu {
-          text-transform: capitalize;
-          color: $clr-label-name;
-          font-size: 0.9rem;
-          font-weight: 500;
-          cursor: pointer;
-          .active {
-            background-color: $clr-dark-blue;
-            color: white;
-            .drop-icon {
-              transform: rotate(180deg);
-            }
-          }
-          .menu-btn {
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            padding: 0.5rem;
-            border-bottom: 1px solid $clr-gray200;
-            span {
-              display: flex;
-              align-items: center;
-            }
-            .drop-icon {
-              color: $clr-dark-orange;
-            }
-            .outline-icon {
-              font-size: 1.2rem;
-              margin-right: 0.3rem;
-            }
-          }
-          ul {
-            list-style: none;
-            margin-left: 1rem;
-            margin-bottom: 0rem;
-            .sub_active {
-              color: $clr-dark-blue;
-            }
-            li {
-              padding: 0.5rem;
-              border-bottom: 1px solid $clr-gray200;
-            }
-          }
-        }
-      }
-      .main-componemt {
-        background-color: white;
-        width: 80%;
-        margin: 0rem 0.8rem 0.8rem 0.8rem;
-        padding: 1rem;
-        position: relative;
-        overflow: hidden;
-      }
-    }
-  }
-}
-.product-tabbed-editor{
-  .tab-heading-row{
-    margin-top: 1rem;
-    border-bottom: 1px solid #dbe9f6;
-    padding-bottom: 0.5rem;
-  }
-  .tab-heading{
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #022069;
-    padding-top: 0.5rem;
-  }
-  .section-heading{
-    margin-top: 2rem;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #022069;
-    padding-top: 0.5rem;
-    border-bottom: 1px solid #dbe9f6;
-  }
-  .section-sub-heading{
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #022069;
-    padding-top: 0.5rem;
-  }
+// .dashboard-background {
+//   background-color: #ededed;
+//   .container-fluid {
+//     padding: 0rem;
+//     height: 100%;
+//     .main-module {
+//       display: flex;
+//       justify-content: space-between;
+//       flex-direction: row;
+//       flex-wrap: nowrap;
+//       min-height: 100vh;
+//       .module-menu {
+//         width: 20%;
+//         background-color: #0f5f9e;
+//         overflow: auto;
+//         .menu {
+//           text-transform: capitalize;
+//           color: #ffffff;
+//           font-size: 0.9rem;
+//           font-weight: 500;
+//           cursor: pointer;
+//           .active {
+//             background-color: $clr-dark-blue;
+//             color: white;
+//             .drop-icon {
+//               transform: rotate(180deg);
+//             }
+//           }
+//           .menu-btn {
+//             display: flex;
+//             justify-content: space-between;
+//             align-content: center;
+//             flex-wrap: nowrap;
+//             flex-direction: row;
+//             padding: 0.5rem;
+//             border-bottom: 1px solid $clr-gray200;
+//             span {
+//               display: flex;
+//               align-items: center;
+//             }
+//             .drop-icon {
+//               color: $clr-dark-orange;
+//             }
+//             .outline-icon {
+//               font-size: 1.2rem;
+//               margin-right: 0.3rem;
+//             }
+//           }
+//           ul {
+//             list-style: none;
+//             margin-left: 1rem;
+//             margin-bottom: 0rem;
+//             .sub_active {
+//               color: $clr-dark-blue;
+//             }
+//             li {
+//               padding: 0.5rem;
+//               border-bottom: 1px solid $clr-gray200;
+//             }
+//           }
+//         }
+//       }
+//       .main-componemt {
+//         background-color: white;
+//         width: 80%;
+//         margin: 0rem 0.8rem 0.8rem 0.8rem;
+//         padding: 1rem;
+//         position: relative;
+//         overflow: hidden;
+//       }
+//     }
+//   }
+// }
+// .product-tabbed-editor{
+//   .tab-heading-row{
+//     margin-top: 1rem;
+//     border-bottom: 1px solid #dbe9f6;
+//     padding-bottom: 0.5rem;
+//   }
+//   .tab-heading{
+//     font-size: 1.1rem;
+//     font-weight: 400;
+//     color: #022069;
+//     padding-top: 0.5rem;
+//   }
+//   .section-heading{
+//     margin-top: 2rem;
+//     font-size: 1.1rem;
+//     font-weight: 400;
+//     color: #022069;
+//     padding-top: 0.5rem;
+//     border-bottom: 1px solid #dbe9f6;
+//   }
+//   .section-sub-heading{
+//     font-size: 0.9rem;
+//     font-weight: 400;
+//     color: #022069;
+//     padding-top: 0.5rem;
+//   }
   
-}
+// }
